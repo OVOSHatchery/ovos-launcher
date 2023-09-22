@@ -14,7 +14,7 @@ If these questions are something you can picture yourself asking, you are in the
 Hello newcomer! OpenVoiceOS provides a larger number of applications and packages, it is a Voice Operating System!
 This can be overwhelming when you just want to try out and have a quick chat with a voice assistant, this repo tries to soften your introduction to ovos by providing the most accessible way to run the basic voice assistant stack
 
-If you are a hardcore linux grey beard you probably are in the wrong place, you want each service as a system daemon, you MUST have performance, you want to tune your config files, you want native integration with your already existing OS! get out of this repo nerd!
+If you are a hardcore linux grey beard you probably are in the wrong place, you want each service as a system daemon, you MUST have performance, you want to tune your config files, you want [native integration](https://github.com/OpenVoiceOS/raspbian-ovos/blob/dev/manual_user_install.sh) with your already existing OS! get out of this repo nerd!
 
 ## Install
 
