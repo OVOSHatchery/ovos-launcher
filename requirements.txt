@@ -19,6 +19,11 @@ ovos-ocp-news-plugin==0.0.3
 ovos-ocp-rss-plugin==0.0.2
 ovos-ocp-youtube-plugin==0.0.2a1
 ovos-PHAL==0.0.5a12
+ovos-PHAL-plugin-alsa==0.0.3
+ovos-phal-plugin-connectivity-events==0.0.3
+ovos-phal-plugin-ipgeo==0.0.2
+ovos-PHAL-plugin-oauth==0.0.3a1
+ovos-PHAL-plugin-system==0.0.4
 ovos-plugin-common-play==0.0.6a8
 ovos-plugin-manager==0.0.24a8
 ovos-skill-date-time==0.2.3a5
@@ -27,8 +32,10 @@ ovos-skill-hello-world==0.0.4a3
 ovos-skill-installer==0.0.5
 ovos-skill-naptime==0.2.3a1
 ovos-skill-personal==0.0.4a2
+ovos-skill-somafm==0.0.1
 ovos-skill-stop==0.3.0a4
 ovos-skill-volume==0.0.2a3
+ovos-skill-weather==0.0.1a13
 ovos-stt-plugin-server==0.0.4a2
 ovos-stt-plugin-vosk==0.2.0a1
 ovos-tts-plugin-mimic==0.2.9a1
@@ -36,12 +43,21 @@ ovos-tts-plugin-mimic3-server==0.0.1
 ovos-tts-plugin-server==0.0.2a6
 ovos-utils==0.0.36a7
 ovos-vad-plugin-precise==0.0.1
+ovos-vad-plugin-silero==0.0.1
 ovos-vad-plugin-webrtcvad==0.0.1
 ovos-workshop==0.0.13a3
 ovos-ww-plugin-pocketsphinx==0.1.3
 ovos-ww-plugin-precise==0.1.1
 ovos-ww-plugin-precise-lite==0.1.2
 ovos-ww-plugin-vosk==0.1.1
+skill-ddg==0.0.2a2
+skill-news==0.0.4a2
+
+
+
+#skill-wolfie
+#skill-wikipedia-for-humans
+#skill-youtube-music
 
 # classic mycroft extras
 tflite_runtime
