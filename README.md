@@ -21,15 +21,29 @@ If you are a hardcore linux grey beard you probably are in the wrong place, you 
 install system libraries
 
 debian: `sudo apt-get install XXXX TODO`
+
 arch: `XXXX TODO`
+
 fedora: `XXXX TODO`
+
+install ovos
 
 `pip install ovos-launcher`
 
 that's it!
 
+#### Troubleshooting
+
+if setup fails to install tflite_runtime in your platform, you can find wheels here https://whl.smartgic.io/ , install `tflite_runtime` first and then retry to install `ovos-launcher`
+
+eg, for pyhon 3.11 in x86
+
+`pip install https://whl.smartgic.io/tflite_runtime-2.13.0-cp311-cp311-linux_x86_64.whl`
+
 ## Running OVOS
 
 by default you can only run OVOS 1 time, do not launch ovos multiple times! If you already have OVOS running as a system daemon, you are a nerd! wrong repo!
 
-in the cli type `ovos-launcher`, that's it! the essential OVOS stack is running in a single process with each service in it's own thread
+in the cli type `ovos-launcher`, that's it!
+
+the essential OVOS stack is running in a single process with each service in it's own thread

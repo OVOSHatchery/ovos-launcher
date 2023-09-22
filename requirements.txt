@@ -38,6 +38,7 @@ ovos-skill-volume==0.0.2a3
 ovos-skill-weather==0.0.1a13
 ovos-stt-plugin-server==0.0.4a2
 ovos-stt-plugin-vosk==0.2.0a1
+ovos-translate-server-plugin==0.0.0a5
 ovos-tts-plugin-mimic==0.2.9a1
 ovos-tts-plugin-mimic3-server==0.0.1
 ovos-tts-plugin-server==0.0.2a6
@@ -50,8 +51,6 @@ ovos-ww-plugin-precise-lite==0.1.2
 ovos-ww-plugin-vosk==0.1.1
 skill-ddg==0.0.2a2
 skill-news==0.0.4a2
-
-
 
 #skill-wolfie
 #skill-wikipedia-for-humans
