@@ -4,6 +4,8 @@ from ovos_gui.service import GUIService
 
 # ovos-dinkum-listener
 from ovos_dinkum_listener.service import OVOSDinkumVoiceService
+from ovos_listener.service import SpeechService
+from mycroft_classic_listener.service import ClassicListener
 
 # ovos-core
 from ovos_utils.skills.api import SkillApi
@@ -40,7 +42,7 @@ def on_stopping():
     LOG.info('OVOS Launcher is shutting down...')
 
 
-def main(ready_hook=on_ready, error_hook=on_error, stopping_hook=on_stopping):
+def main(listener="dinkum", ready_hook=on_ready, error_hook=on_error, stopping_hook=on_stopping):
     LOG.info('Starting OVOS Launcher')
 
     init_service_logger("ovos-launcher")
@@ -75,7 +77,12 @@ def main(ready_hook=on_ready, error_hook=on_error, stopping_hook=on_stopping):
 
     # STT service
     LOG.info('Starting STT service...')
-    service = OVOSDinkumVoiceService()
+    if listener == "classic":
+        service = ClassicListener(bus)
+    elif listener == "old":
+        service = SpeechService()
+    else:
+        service = OVOSDinkumVoiceService()
     service.daemon = True
     service.start()
 
@@ -115,4 +122,6 @@ def main(ready_hook=on_ready, error_hook=on_error, stopping_hook=on_stopping):
 if __name__ == "__main__":
     # TODO - arguments
     # --config path/to/mycroft.conf
-    main()
+    # --classic-listener
+    # --old-listener
+    main(listener="dinkum")
