@@ -43,3 +43,14 @@ by default you can only run OVOS 1 time, do not launch ovos multiple times! If y
 in the cli type `ovos-launcher`, that's it!
 
 the essential OVOS stack is running in a single process with each service in it's own thread
+
+```bash
+$ovos-launcher --help
+
+Usage: ovos-launcher [OPTIONS]
+
+Options:
+  -l, --listener TEXT  Choose a listener for mic input handling,
+                       dinkum/old/classic
+  --help               Show this message and exit.
+```

@@ -7,7 +7,7 @@ ovos-bus-client==0.0.5
 ovos-classifiers==0.0.0a37
 ovos-config==0.0.11a13
 ovos-core==0.0.8a37
-mycroft-classic-listener==0.0.1
+mycroft-classic-listener>=0.0.2a1
 ovos-dinkum-listener==0.0.3a11
 ovos-gui==0.0.3
 ovos-lingua-franca==0.4.8a7
@@ -54,6 +54,8 @@ skill-news==0.0.4a2
 #skill-wolfie
 #skill-wikipedia-for-humans
 #skill-youtube-music
+
+rich-click
 
 # classic mycroft extras
 tflite_runtime
