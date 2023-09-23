@@ -1,5 +1,9 @@
 # Changelog
 
+## [V0.1.0a1](https://github.com/OpenVoiceOS/ovos-launcher/tree/V0.1.0a1) (2023-09-23)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-launcher/compare/V0.1.0...V0.1.0a1)
+
 ## [V0.1.0](https://github.com/OpenVoiceOS/ovos-launcher/tree/V0.1.0) (2023-09-23)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-launcher/compare/V0.1.0a2...V0.1.0)
