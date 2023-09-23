@@ -1,3 +1,4 @@
+import click
 
 # ovos-gui
 from ovos_gui.service import GUIService
@@ -40,6 +41,13 @@ def on_error(e='Unknown'):
 
 def on_stopping():
     LOG.info('OVOS Launcher is shutting down...')
+
+
+@click.command()
+@click.option("--listener", "-l", default="dinkum",
+              help="Choose a listener for mic input handling, dinkum/old/classic")
+def launch(listener):
+    main(listener=listener)
 
 
 def main(listener="dinkum", ready_hook=on_ready, error_hook=on_error, stopping_hook=on_stopping):
@@ -120,8 +128,4 @@ def main(listener="dinkum", ready_hook=on_ready, error_hook=on_error, stopping_h
 
 
 if __name__ == "__main__":
-    # TODO - arguments
-    # --config path/to/mycroft.conf
-    # --classic-listener
-    # --old-listener
-    main(listener="dinkum")
+    launch

@@ -58,7 +58,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'ovos-launcher=ovos_launcher.__main__:main'
+            'ovos-launcher=ovos_launcher.__main__:launch'
         ]
     }
 )
