@@ -20,11 +20,7 @@ If you are a hardcore linux grey beard you probably are in the wrong place, you 
 
 install system libraries
 
-debian: `sudo apt-get install XXXX TODO`
-
-arch: `XXXX TODO`
-
-fedora: `XXXX TODO`
+debian: `sudo apt-get install -y build-essential python3-dev python3-pip python3-venv swig libssl-dev libfann-dev portaudio19-dev libpulse-dev cmake libncurses-dev pulseaudio-utils pulseaudio`
 
 install ovos
 
