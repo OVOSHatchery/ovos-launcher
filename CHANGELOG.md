@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-launcher/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-launcher/compare/V0.1.0a1...HEAD)
+
+**Merged pull requests:**
+
+- Update README.md [\#2](https://github.com/OpenVoiceOS/ovos-launcher/pull/2) ([mikejgray](https://github.com/mikejgray))
+
 ## [V0.1.0a1](https://github.com/OpenVoiceOS/ovos-launcher/tree/V0.1.0a1) (2023-09-23)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-launcher/compare/V0.1.0...V0.1.0a1)
