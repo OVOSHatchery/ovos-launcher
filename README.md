@@ -3,6 +3,7 @@
 Who is this repo for?
 
 If these questions are something you can picture yourself asking, you are in the right place!
+
 - where is the desktop icon?
 - how do i install the app?
 - I NEED start-mycroft.sh
@@ -72,11 +73,11 @@ Create or edit a file at `~/.config/mycroft/mycroft.conf` with the following dat
 ```json
 {
   "play_wav_cmdline": "paplay %1",
-  "play_mp3_cmdline": "paplay %1",
+  "play_mp3_cmdline": "mpg123 %1"
 }
 ```
 
-That will force OVOS to use PulseAudio instead.
+That will force OVOS to use PulseAudio and mpg123 instead.
 
 ##### How do I install new skills???
 
