@@ -3,6 +3,7 @@
 Who is this repo for?
 
 If these questions are something you can picture yourself asking, you are in the right place!
+
 - where is the desktop icon?
 - how do i install the app?
 - I NEED start-mycroft.sh
@@ -26,15 +27,7 @@ install ovos
 
 `pip install ovos-launcher`
 
-that's it!
-
-#### Troubleshooting
-
-if setup fails to install tflite_runtime in your platform, you can find wheels here https://whl.smartgic.io/ , install `tflite_runtime` first and then retry to install `ovos-launcher`
-
-eg, for pyhon 3.11 in x86
-
-`pip install https://whl.smartgic.io/tflite_runtime-2.13.0-cp311-cp311-linux_x86_64.whl`
+that's it! it's installed! Now go to [Running OVOS](#Running-OVOS)
 
 ## Running OVOS
 
@@ -42,7 +35,7 @@ by default you can only run OVOS 1 time, do not launch ovos multiple times! If y
 
 in the cli type `ovos-launcher`, that's it!
 
-the essential OVOS stack is running in a single process with each service in it's own thread
+the essential OVOS stack is running in a single process with each service in its own thread
 
 ```bash
 $ovos-launcher --help
@@ -54,3 +47,42 @@ Options:
                        dinkum/old/classic
   --help               Show this message and exit.
 ```
+
+#### Troubleshooting
+
+##### tflite_runtime failure
+
+if setup fails to install tflite_runtime in your platform, you can find wheels here https://whl.smartgic.io/ , install `tflite_runtime` first and then retry to install `ovos-launcher`
+
+eg, for python 3.11 in x86
+
+`pip install https://whl.smartgic.io/tflite_runtime-2.13.0-cp311-cp311-linux_x86_64.whl`
+
+##### Audio doesn't play
+
+Issues with pipewire in Kubuntu have been observed. If you see a log similar to this:
+
+```bash
+2023-10-13 08:38:48.270 - ovos-launcher - ovos_dinkum_listener.voice_loop.voice_loop:run:222 - INFO - Wakeword detected
+stream node 39 error: no node available
+remote error: id=3 seq:7 res:-2 (No such file or directory): no node available
+```
+
+Create or edit a file at `~/.config/mycroft/mycroft.conf` with the following data:
+
+```json
+{
+  "play_wav_cmdline": "paplay %1",
+  "play_mp3_cmdline": "mpg123 %1"
+}
+```
+
+That will force OVOS to use PulseAudio and mpg123 instead.
+
+##### How do I install new skills???
+
+OVOS skills are all Python packages that can be pip installed. Find the skill you want, and run `pip install git+$REPO` (ex: `pip install git+https://github.com/OpenVoiceOS/ovos-skill-easter-eggs`), then re-run `ovos-launcher`. Your new skill will be picked up as OVOS loads.
+
+#### Known issues
+
+OCP (OVOS Common Play) is coupled to the OVOS GUI, which does not run with `ovos-launcher`. Work is coming soon to decouple that requirement and get music skills working in a no-GUI configuration.
